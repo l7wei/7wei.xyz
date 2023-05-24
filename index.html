@@ -24,7 +24,7 @@
             Light:  css/skeleton-light.css
             Dark:   css/skeleton-dark.css
     -->
-    <link rel="stylesheet" href="css/skeleton-light.css" />
+    <link rel="stylesheet" href="css/skeleton-dark.css" />
 
     <!-- Brand Styles -->
     <link rel="stylesheet" href="css/brands.css" />
@@ -33,8 +33,21 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="icon" type="image/png" href="images/wei/wei.jpg" />
 
-    <!-- Google Analytics 
+    <!-- Open Graph
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta property="og:title" content="林奇葦 | Links" />
+    <meta property="og:site_name" content="林奇葦 | Links" />
+    <meta property="og:url" content="https://7wei.xyz/" />
+    <meta
+      property="og:description"
+      content="這裡有林奇葦的社群媒體帳號、履歷與作品集，我希望從現在開始累積不同領域的經驗，想成為更有溫度的人(๑´ڡ`๑)"
+    />
+    <meta property="og:type" content="profile" />
+    <meta property="og:image" content="images/wei/wei.jpeg" />
+
+    <!-- Google Analytics
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
     <!-- Google tag (gtag.js) -->
     <script
       async
@@ -48,6 +61,36 @@
       gtag("js", new Date());
 
       gtag("config", "G-3D9PJK2VZ9");
+    </script>
+
+    <!-- Google Tag Manager
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+    <!-- Backkground Image
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <style>
+      body {
+        position: relative; /* 將body元素設定為相對定位，讓::before偽元素能夠正確定位 */
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+    </style>
+
+    <script>
+      window.addEventListener("DOMContentLoaded", function () {
+        var backgroundImages = [
+          "images/otters/otter-cat-1.gif",
+          "images/otters/otter-cat-2.gif",
+          "images/otters/otter-cat-3.gif",
+          "images/otters/otter-cat-4.gif",
+        ];
+
+        var randomIndex = Math.floor(Math.random() * backgroundImages.length);
+        var selectedImage = backgroundImages[randomIndex];
+
+        document.body.style.backgroundImage = "url(" + selectedImage + ")";
+      });
     </script>
   </head>
 
